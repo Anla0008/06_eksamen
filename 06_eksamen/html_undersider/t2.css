@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Sørger for, at indholdet er centreret vertikalt */
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.underside1-tekst {
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.tema2-cssgrid {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+.tema2-html {
+  margin-right: 20px;
+}
+
+.t2_knap,
+.t5_knap,
+.t5-1_knap {
+  display: flex; /* Anvend flexbox */
+  align-items: center; /* Centrer elementet vertikalt */
+  justify-content: center; /* Centrer elementet horisontalt */
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  color: black;
+  background-color: #f7d4de;
+  width: 200px;
+  padding: 15px 32px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.t5_knap {
+  width: 300px;
+}
+
+.t5-1_knap {
+  width: 350px;
+}
+
+.tema3-research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.tema3-research img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for mobil first (under 750px) */
+@media only screen and (max-width: 750px) {
+  .underside1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .tema2-cssgrid,
+  .tema2-html {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .tema2-html {
+    margin-top: 20px;
+  }
+
+  .t2_knap {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .tema4-html {
+    margin-bottom: 25px;
+  }
+}
+
+/* Styling for større skærme (over 750px) */
+@media only screen and (min-width: 750px) {
+  .underside1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .t2_knap:hover,
+  .t5_knap:hover,
+  .t5-1_knap:hover {
+    background-color: #e5b3c3;
+  }
+  .t2_knap {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .tema3-research {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50%;
+    margin-bottom: 10%;
+  }
+
+  .tema3-html {
+    margin-left: 60px;
+  }
+
+  .tema4-html {
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
